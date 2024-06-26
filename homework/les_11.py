@@ -1,19 +1,19 @@
 # # Задание 1
-# def factorial(n):
-#     if n == 0 or n == 1:
-#         return 1
-#     result = 1
-#     for i in range(2, n+1):
-#         result *= i
-#     return result
-# def list1(n):
-#     fact_n = factorial(n)
-#     fact_list = [factorial(i) for i in range(n, 0, -1)]
-#     return fact_n, fact_list
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n+1):
+        result *= i
+    return result
+def list1(n):
+    fact_n = factorial(n)
+    fact_list = [factorial(i) for i in range(n, 0, -1)]
+    return fact_n, fact_list
 
-# n = int(input("Введите целое число: "))
-# fact_n, result_list = list1(n)
-# print("Список факториалов:", result_list)
+n = int(input("Введите целое число: "))
+fact_n, result_list = list1(n)
+print("Список факториалов:", result_list)
 
 # Задание 2
 import collections
