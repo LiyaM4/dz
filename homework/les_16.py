@@ -28,6 +28,7 @@ try:
     kassa.take_away(6000)
 except ValueError as e:
     print(e)
+    
 # Задание 2
 class Черепашка:
     def __init__(self, x, y, s):
